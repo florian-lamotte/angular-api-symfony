@@ -1,0 +1,8 @@
+<html ng-app="routeAppControllers">
+<section class="home" ng-controller="PostsController">
+    <div ng-repeat="b in Mydata">
+        <h3>{{ b.title }}</h3> by {{ b.username }} le {{ b.createdAt.date }} 
+        <p>{{ b.summary }}</p>
+    </div>
+</section>
+</html>

@@ -1,0 +1,9 @@
+<html ng-app="routeAppControllers">
+<section class="home" ng-controller="HomeController">
+    <div ng-repeat="b in Mydata">
+        <h3>{{ b.title }}</h3> by {{ b.username }} le {{ b.createdAt.date }} 
+        <p>{{ b.summary }}</p>
+        <p><button ng-click="read()">Read More</button></p>
+    </div>
+</section>
+</html>
